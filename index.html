@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+	<title>Login</title>
+</head>
+<body>
+	
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav1">
+        <a class="navbar-brand" href="index.php"><img src="itb.png" style="width: 50px;height: 50px;border-radius: 50px"></a>
+        <button style="background: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+       
+               <li class="nav-item active">
+                   <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#ingresar" onclick="ingresar();">Iniciar Sesion</a>
+               </li>
+              
+               
+           </ul>
+        </div>
+    </nav>
+    <div data-backdrop="static"  class="modal fade" id="ingresar">
+	    <div class="col-md-12 modal-dialog" >
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h4 class="modal-title">Iniciar Sesión</h4>
+	                <button type="button" class="close" data-dismiss="modal">X</button>
+	            </div>
+	            <div class="col-md-12" style="background:linear-gradient(deepSkyBlue,Black);">
+		            <div class="modal-body" >
+		               <form action="Backend/archivos.php" method="POST">
+		          		   <div class="form-group" id="user-group">
+		            		   <label for="user">Usuario</label>
+		            		   <i class="fas fa-user"></i><input type="text" class="form-control" name="usuario" id="usuario"  placeholder="ingrese su e-mail">
+		        	  	   </div>
+		        	  	   <div class="form-group" id="password-group">
+						       <label for="contra">Contraseña</label>
+						       <i class="fas fa-lock"></i><input type="password" class="form-control" name="contra" id="contra" placeholder="ingrese su contraseña">
+					  	   </div>
+					  	   <div class="form-group">
+		          			   <button type="submit" class="btn btn-primary"  name="acept" id="enviar" value="acept">Ingresar</button>
+		            	   </div>
+                           <a href="registro.html"> registro </a>
+		               </form>
+		    		</div>
+	    	   </div>	
+	        </div>
+	    </div>
+    </div>
+    
+    </div>
+    <footer id="ide" class="bg-light nav1">
+         <div align="center" class="redes">
+         	<i><strong>Copyright 2021 &copy Colavella Franco</strong></i><br>
+            <a title="Instagram" href="https://www.instagram.com/francobodier_lt/" target="_blank"><i class="fab fa-instagram ins"></i></a>
+            <a title="Facebook" href="https://www.facebook.com/profile.php?id=100013298558100" target="_blank"><i class="fab fa-facebook fac"></i></a>
+            <a title="GitHub" href="https://github.com/FrancoColavella" target="_blank"><i class="fab fa-github git"></i></a>
+        </div>   
+    </footer>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2be8605e79.js"></script>
+    <script type="text/javascript" src="login.js"></script>    
+</body>
+</html>
